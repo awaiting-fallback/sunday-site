@@ -11,52 +11,42 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  flex-direction: column;
 }
 
 .manifesto {
-  max-width: 800px;
-  width: 100%;
+  text-align: center;
 }
 
 .pulse {
   color: #C62828;
-  font-size: 3rem;
+  font-size: 2.8rem;
   animation: pulse 1.5s infinite;
 }
 
 .glitch {
   margin-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
+  color: #F2F2F2;
   animation: glitch 2s infinite;
 }
 
-.center {
-  text-align: center;
-}
-
-.question {
+.activate {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 2px solid #3D5AFE;
   color: #3D5AFE;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.cursor {
-  font-size: 1.5rem;
-  color: #4C4C4C;
-  margin-top: 2rem;
-  text-align: left;
-  animation: blink 1s steps(2, start) infinite;
+  font-family: monospace;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 @keyframes pulse {
   0% { opacity: 1; }
   50% { opacity: 0.4; }
   100% { opacity: 1; }
-}
-
-@keyframes blink {
-  to { visibility: hidden; }
 }
 
 @keyframes glitch {
